@@ -54,7 +54,7 @@ The benefit of using the child logger, is you can use hierarchical logging, so y
 Pass the logging settings to the class constructor.
 
 Setting | Type | Description
----------- | ----------------
+---------- | ---------|-------
 level | String | Debug/Info/Warn etc.
 prefix | String | Log name will be prefixed with this. Use your main app name.
 outputStreams | Object[]| Array of output streams (not including console)
