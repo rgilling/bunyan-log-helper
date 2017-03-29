@@ -18,7 +18,7 @@ I kept doing this in project after project, so decided to make it a module. Not 
 const Logger = require('bunyan-log-helper');
 
 const logOpts = {
-  preix: 'myapp',
+  prefix: 'myapp',
   level: 'debug',
   outputStreams: [{
     type: 'rotating-file',
