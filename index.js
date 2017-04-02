@@ -19,11 +19,16 @@ class Logger {
       if (!this.options) {
         throw new Error('logging options not configured');
       }
-      this.streams = this.options.outputStreams || [];
+
+      if (this.options.outputStreams.length) {
+        this.streams = JSON.parse(JSON.stringify(this.options.outputStreams));
+      } else {
+        this.streams = [];
+      }
+
       if (this.streams.length) {
         /* dumb cloning without lodash yay!
            otherwise it was causing issue in test */
-        this.streams = JSON.parse(JSON.stringify(this.streams));
         this.streams.forEach((stream) => {
           stream.level = stream.level || this.options.level;
         });
