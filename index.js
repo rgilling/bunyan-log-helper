@@ -12,7 +12,7 @@ class Logger {
   constructor(loggingOptions) {
     if (loggingOptions) {
       this.options = loggingOptions;
-      if (process.env.quiet) {
+      if (process.env.quiet && process.env.quiet.toString() !== 'false') {
         this.options.quiet = true;
       }
 
