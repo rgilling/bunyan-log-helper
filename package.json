@@ -1,6 +1,6 @@
 {
   "name": "bunyan-log-helper",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "Simple utility to create child loggers and to log formatted messages to console.",
   "main": "index.js",
   "directories": {
