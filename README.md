@@ -5,6 +5,7 @@ Very simple wrapper for creating Bunyan loggers from a common base.
 1. Creates logging that uses a prefix and module approach.
 2. Automatically create the console logger using `Bunyan-pretty-stream` module.
 
+
 ### Inspiration
 I kept doing this in project after project, so decided to make it a module. Not much more to it than that. Bunyan is great especially when you use it with LogStash - basically replaces Splunk. But sometimes you need console printing.
 
